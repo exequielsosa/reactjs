@@ -3,10 +3,9 @@ import Layout from './components/layout';
 
 function Home() {
   return (
-    <div className="App">
-		<Layout />
-
-  <section className="main">
+    
+		<Layout>
+		<section className="main">
 	<section className="articles">
 	<article>
 		<h2>Estudio Contable Dillon</h2><br />
@@ -52,13 +51,14 @@ function Home() {
 
 
 
-</section>
+</section>			
+		</Layout>
 
-<footer>
-	<p>Estudio Contable Dillon - 2020 - Todos los derechos reservados</p>
-</footer>
 
-    </div>
+
+
+
+    
   );
 }
 
