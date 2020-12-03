@@ -1,0 +1,77 @@
+.main .articles {
+	width: 68.5%;
+	float: left;
+	margin-right: 1.5%;
+}
+
+.main .articles article {
+	padding: 20px;
+	margin-bottom: 20px;
+	background: #fff;
+	border-radius: 10px;
+	text-align: justify;
+	line-height: 25px;
+
+}
+
+
+.main .articles article ul {
+	list-style-position: inside;
+}
+
+
+.main .articles article img {
+	border-radius: 10px;
+}
+
+
+aside {
+	width: 30%;
+	background: #F3F7FE;
+	float: left;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 10px;
+
+}
+
+
+footer {
+	background: #75acec;
+	color: #fff;
+	clear: both;
+	text-align: center;
+	padding: 10px 0px;
+
+}
+
+
+#form {
+    border:0px solid #528fd5;
+    width:500px;
+    margin:auto;
+}
+#form legend{
+    font-weight:bold;
+    font-size:12px;
+}
+#form ol{
+    list-style:none;
+}
+#form ol li{
+    padding-bottom:10px;
+}
+#form ol li label{
+    width:120px;
+    float:left;
+    text-align:left;
+}
+#form input[type=text] {
+    border:1px solid #75acec;
+}
+#form input.btn {
+    padding:10px;
+    color:#FFFFFF;
+    background-color:#528fd5;
+    border:1px solid #528fd5;
+}
