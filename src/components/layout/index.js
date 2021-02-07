@@ -1,123 +1,103 @@
 import React from "react";
 import "./style.css";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faMoneyBillAlt,
-  faFileInvoice,
-  faPager,
-  faPaperPlane,
-  faRss,
-  faNewspaper,
-  faAddressCard,
-  faEnvelope,
-  faBars,
-} from "@fortawesome/free-solid-svg-icons";
-
+import Navbar from "../navBar/Navbar";
 
 const Layout = (props) => {
   return (
     <div>
       <header>
-        <div className="logotipo">
-          <img
-            src="imgs/logo.png"
-            alt="logotipo"
-            className="logo"
-          />
-        </div>
-        <div className="menu_bar">
-          <Link to="#" className="icon_menu">
-            <span>
-              <FontAwesomeIcon icon={faBars} />
-            </span>
-            Menu
-          </Link>
-        </div>
-
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">
-                <span className="icon">
-                  <FontAwesomeIcon icon={faHome} />
-                </span>
-                Inicio
-              </Link>
-            </li>
-            <li>
-              <Link to="/impuestos">
-                <span className="icon">
-                  <FontAwesomeIcon icon={faMoneyBillAlt} />
-                </span>
-                Impuestos
-              </Link>
-            </li>
-            <li>
-              <Link to="/sueldos">
-                <span className="icon">
-                  <FontAwesomeIcon icon={faFileInvoice} />
-                </span>
-                Sueldos
-              </Link>
-            </li>
-            <li>
-              <Link to="/monotributo">
-                <span className="icon">
-                  <FontAwesomeIcon icon={faPager} />
-                </span>
-                Monotributo
-              </Link>
-            </li>
-            <li>
-              <Link to="/tramites">
-                <span className="icon">
-                  <FontAwesomeIcon icon={faPaperPlane} />
-                </span>
-                Trámites
-              </Link>
-            </li>
-            <li>
-              <Link to="/novedades">
-                <span className="icon">
-                  <FontAwesomeIcon icon={faRss} />
-                </span>
-                Novedades
-              </Link>
-            </li>
-            <li>
-              <Link to="/vencimientos">
-                <span className="icon">
-                  <FontAwesomeIcon icon={faNewspaper} />
-                </span>
-                Vencimientos
-              </Link>
-            </li>
-            <li>
-              <Link to="/quienes">
-                <span className="icon">
-                  <FontAwesomeIcon icon={faAddressCard} />
-                </span>
-                Quienes Somos
-              </Link>
-            </li>
-            <li>
-              <Link to="/contactos">
-                <span className="icon">
-                  <FontAwesomeIcon icon={faEnvelope} />
-                </span>
-                Contactos
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        <Navbar />
       </header>
       {props.children}
+
+      <div className="pie">
+        <div className="logosredes" align="center">
+          <p>Nuestras Redes </p>
+          <br />
+          <a
+            href="http://www.instagram.com/maugexxiv"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="imgs/instagram.png"
+              alt="Instagram"
+              tag="instagram"
+              className="logos"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/maria-eugenia-dillon-05346113/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              alt="Linkedin"
+              src="imgs/linkedin.png"
+              tag="linkedin"
+              className="logos"
+            />
+          </a>
+          <a href="http://www.facebook.com/" target="_blank" rel="noreferrer">
+            <img
+              src="imgs/facebook.png"
+              alt="Facebook"
+              tag="facebook"
+              className="logos"
+            />
+          </a>
+          <a
+            href=" https://api.whatsapp.com/send?phone=5491158959823"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="imgs/whatsapp.png"
+              alt="WhatsApp"
+              tag="whatsapp"
+              className="logos"
+            />
+          </a>
+          <a href="mailto:estudiodillonsosa@gmail.com?Subject:Consulta%20a%20Estudio%20Dillon">
+            <img
+              src="imgs/email.png"
+              alt="Mail"
+              tag="email"
+              className="logos"
+            />
+          </a>
+        </div>{" "}
+        <br />
+        <div className="logos_Links">
+          <p align="center">Otros links de interes</p>
+          <br />
+          <div align="center" className="otroslinks">
+            <a href="http://www.arba.gob.ar" target="_blank" rel="noreferrer">
+              <img
+                src="imgs/arba22.png"
+                alt="Arba"
+                tag="arba"
+                width="100"
+                className="links"
+              />
+            </a>
+            <br />
+            <a href="http://www.afip.gov.ar" target="_blank" rel="noreferrer">
+              <img
+                src="imgs/afip22.png"
+                alt="Afip"
+                tag="afip"
+                width="120"
+                className="links"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
       <footer>
         <p>Estudio Contable Dillon - 2021 - Todos los derechos reservados</p>
       </footer>
-    
     </div>
   );
 };

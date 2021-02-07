@@ -8,9 +8,9 @@
   margin-bottom: 20px;
   background: #fff;
   border-radius: 10px;
-  text-align: justify;
+  text-align: left;
   line-height: 20px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
 }
 .main .articles article ul {
   list-style-position: inside;
@@ -25,8 +25,9 @@ aside {
   padding: 20px;
   box-sizing: border-box;
   border-radius: 10px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
 }
+
 footer {
   background: #75acec;
   color: #fff;
@@ -34,37 +35,10 @@ footer {
   text-align: center;
   padding: 10px 0px;
   border-radius: 10px;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
   
 }
-#form {
-  border: 0px solid #528fd5;
-  width: 500px;
-  margin: auto;
-}
-#form legend {
-  font-weight: bold;
-  font-size: 12px;
-}
-#form ol {
-  list-style: none;
-}
-#form ol li {
-  padding-bottom: 10px;
-}
-#form ol li label {
-  width: 120px;
-  float: left;
-  text-align: left;
-}
-#form input[type="text"] {
-  border: 1px solid #75acec;
-}
-#form input.btn {
-  padding: 10px;
-  color: #ffffff;
-  background-color: #528fd5;
-  border: 1px solid #528fd5;
-}
+
 img.logos {
   width: 55px;
   height: 55px;
@@ -72,4 +46,16 @@ img.logos {
 img.links {
   width: 25%;
   height: 25%;
+}
+
+@media screen and (max-width: 1068px) {
+  aside {
+   display: none;
+  } 
+  .main .articles {
+    width: 100%;
+    float: left;
+    margin-right: 1.5%;
+  }
+
 }
