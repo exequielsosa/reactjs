@@ -14,7 +14,7 @@ const Vencimientos = () => {
               <a href="imgs/Calendario+Vencimientos+2021.png" target="_blank">
                 <img
                   src="imgs/Calendario+Vencimientos+2021.png"
-                  width="800"
+                  width="100%"
                   tag="vencimientos"
                   alt="Vencimientos"
                 />

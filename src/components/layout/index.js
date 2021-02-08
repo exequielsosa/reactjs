@@ -77,8 +77,7 @@ const Layout = (props) => {
                 src="imgs/arba22.png"
                 alt="Arba"
                 tag="arba"
-                width="100"
-                className="links"
+                className="links_arba"
               />
             </a>
             <br />
@@ -87,8 +86,7 @@ const Layout = (props) => {
                 src="imgs/afip22.png"
                 alt="Afip"
                 tag="afip"
-                width="120"
-                className="links"
+                className="links_afip"
               />
             </a>
           </div>
