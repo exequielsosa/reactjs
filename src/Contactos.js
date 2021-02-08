@@ -25,9 +25,9 @@ const Contactos = () => {
             <br />
             <div align="center" className="quienes">
               <img
-                src="imgs/quienes.jpg"
+                src="imgs/olas.png"
                 tag="quienessomos"
-                width="500"
+                width="300"
                 alt="Contactos"
               />
             </div>
